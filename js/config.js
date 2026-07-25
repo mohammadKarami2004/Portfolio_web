@@ -75,7 +75,7 @@ const SITE_DATA = {
             },
             badges: ["Compose", "Paging 3", "Hilt", "Room", "WorkManager"],
             links: [
-                { label: "GitHub ↗", url: "https://github.com/YOUR_USERNAME/bulletin-news" },
+                { label: "GitHub ↗", url: "https://github.com/mohammadKarami2004/Bulletin" },
             ],
         },
         {
