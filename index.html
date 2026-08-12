@@ -3,7 +3,36 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Portfolio Preview</title>
+
+        <!--
+        ⚠️ این تیتر و توضیحات ثابت هستن و از js/config.js خونده نمی‌شن،
+        چون ربات‌های تلگرام/لینکدین/توییتر جاوااسکریپت رو اجرا نمی‌کنن و
+        فقط همین متن‌های داخل <head> رو می‌بینن. اگه اسم/نقش/عکس خودت رو
+        عوض کردی، همینجا رو هم دستی آپدیت کن تا با هم یکی باشن.
+        -->
+        <title>Mohammad | Android Developer</title>
+        <meta name="description" content="Android developer focused on clean architecture and smooth UX — Kotlin, Jetpack Compose, Coroutines & Room." />
+
+        <!-- Open Graph (Telegram, LinkedIn, Facebook, WhatsApp...) -->
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Mohammad | Android Developer" />
+        <meta property="og:description" content="Android developer focused on clean architecture and smooth UX — Kotlin, Jetpack Compose, Coroutines & Room." />
+        <meta property="og:image" content="assets/og-image.png" />
+        <!-- بعد از آنلاین کردن سایت، آدرس بالا رو کامل کن، مثلاً:
+             https://username.github.io/portfolio/assets/og-image.png
+             چون بعضی پلتفرم‌ها آدرس نسبی رو درست نمی‌خونن -->
+
+        <!-- Twitter/X card -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Mohammad | Android Developer" />
+        <meta name="twitter:description" content="Android developer focused on clean architecture and smooth UX — Kotlin, Jetpack Compose, Coroutines & Room." />
+        <meta name="twitter:image" content="assets/og-image.png" />
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+
         <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
@@ -14,6 +43,7 @@
                 <div class="logo">&lt;/&gt; <span>dev.folio</span></div>
                 <div class="nav-links">
                     <a href="#about" data-en="About">درباره من</a>
+                    <a href="#timeline" data-en="Experience">تجربه</a>
                     <a href="#projects" data-en="Projects">پروژه‌ها</a>
                     <a href="#skills" data-en="Skills">مهارت‌ها</a>
                     <a href="#contact" data-en="Contact">تماس</a>
@@ -68,6 +98,18 @@
                     </div>
                 </div>
                 <div class="section-close reveal">}</div>
+            </div>
+        </section>
+
+        <section id="timeline">
+            <div class="container">
+                <div class="section-tag reveal">
+                    <span class="kw">val</span>
+                    <span class="cls">timeline</span> = listOf(
+                    <span class="paren"></span>
+                </div>
+                <div class="timeline" id="timelineList"></div>
+                <div class="section-close reveal">)</div>
             </div>
         </section>
 
